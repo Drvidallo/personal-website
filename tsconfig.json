@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "lib": ["ES5", "ES6", "DOM"],
+    "allowJs": false,
+    "sourceMap": false,
+    "rootDir": ".",
+    "strict": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [ "src/*" ],
+      "@api/helpers": [ "src/helpers/index" ],
+      "@api/controllers": [ "src/api/controller/index" ],
+      "@api/dao": [ "src/api/dao/index" ],
+      "@api/entities": [ "src/api/dao/entities/index" ],
+      "@api/services": [ "src/api/services/*" ],
+      "@api/config": [ "src/config/index" ],
+      "@api/constants": [ "src/lib/constants/index" ],
+      "@api/constants/main": [ "src/lib/constants/main" ],
+      "@api/constants/okta": [ "src/lib/constants/okta" ],
+      "@api/lang": [ "src/lib/lang/index" ],
+      "@api/docs": [ "src/docs/*" ],
+      "@tests/*": [ "tests/*" ],
+      "@tests/constants": [ "tests/constants" ],
+      "@tests/helpers": [ "tests/helpers" ],
+      "@database/seeders": [ "database/seeders/index" ]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./api-builds",
+    "rootDir": "./src"
+  },
+  "exclude": [
+    "api-builds",
+    "coverage",
+    "database",
+    "docker-files",
+    "ecosystem.config.js",
+    "node_modules",
+    "tests"
+  ]
+}
